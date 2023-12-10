@@ -1,0 +1,43 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax.  -->
+<div class="page" data-name="reglas">
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+        <div class="left">
+            <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span class="ios-only">Back</span>
+            </a>
+        </div>
+        <div class="title">Dialogix</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="block-title">Configuración del Bot</div>
+        <div class="list no-hairlines-md">
+          <ul>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Rol del Bot</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="rol-bot" placeholder="Rol del Bot" />
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Reglas del Mensaje</div>
+                <div class="item-input-wrap">
+                  <textarea id="reglas-mensaje" placeholder="Escribe las reglas aquí..."></textarea>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="block">
+          <button class="col button button-fill" onclick="guardarConfiguracion()">Guardar</button>
+          <br>
+          <button class="col button button-fill" onclick="eliminar-regla()"data-id="ID_DE_LA_REGLA">Eliminar</button>
+          
+        </div>
+      </div>
+    </div>
